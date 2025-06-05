@@ -86,7 +86,7 @@ function HeroSection() {
           </div>
           <div className="bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
             <p className="text-sm text-gray-400">My Work</p>
-            <h3 className="text-xl font-semibold text-white">Projects</h3>
+            <h3 className="text-xl font-semibold text-white">Project</h3>
           </div>
         </div>
         <div className="bg-[#111111] rounded-3xl px-4 shadow-lg border border-gray-900 w-full max-w-screen-xl mx-auto">
