@@ -16,6 +16,7 @@ import {
 } from "@/assets";
 import ArrowIcon from "@/assets/logo/ArrowIcon";
 import Image from "next/image";
+import Link from "next/link";
 import "swiper/css";
 import { Autoplay, FreeMode, Mousewheel } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -35,14 +36,14 @@ function HeroSection() {
   ];
   return (
     <section className="grid lg:grid-cols-2 gap-5">
-      <div className="group cursor-pointer bg-[#111111] rounded-3xl p-6 grid sm:grid-cols-2 gap-4 items-center w-full shadow-lg border border-gray-900">
+      <Link href={""} className="group bg-[#111111] rounded-3xl p-6 grid sm:grid-cols-2 gap-4 items-center w-full shadow-lg border border-gray-900">
         <div className="rounded-tl-4xl rounded-br-4xl overflow-hidden">
           <Image
             src={Mayank.src}
             alt="Mayank"
             width={300}
             height={300}
-            className="object-cover w-fit h-full"
+            className="object-cover w-full h-full"
           />
         </div>
         <div className="flex flex-col gap-6">
@@ -66,10 +67,10 @@ function HeroSection() {
             <ArrowIcon className="group-hover:text-blue-400 transition-all" />
           </div>
         </div>
-      </div>
+      </Link>
       <div className="flex flex-col gap-4">
-        <div className="grid md:grid-cols-2 gap-5">
-          <div className="bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
+        <div className="grid sm:grid-cols-2 gap-5">
+          <Link href={""} className="group bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
             <div className="flex justify-center">
               <Image
                 src={Signature.src}
@@ -79,17 +80,25 @@ function HeroSection() {
                 className="w-full h-full"
               />
             </div>
-            <div>
-              <p className="text-sm text-gray-400">More about me</p>
-              <h3 className="text-xl font-semibold text-white">Credentials</h3>
+            <div className="flex justify-between items-center">
+              <div>
+                <p className="text-sm text-gray-400">More About Me</p>
+                <h3 className="text-xl font-semibold text-white">Credentials</h3>
+              </div>
+              <ArrowIcon className="group-hover:text-blue-400 transition-all" />
             </div>
-          </div>
-          <div className="bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
-            <p className="text-sm text-gray-400">My Work</p>
-            <h3 className="text-xl font-semibold text-white">Project</h3>
-          </div>
+          </Link>
+          <Link href={""} className="group bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
+            <div className="flex justify-between items-center">
+              <div>
+                <p className="text-sm text-gray-400">My Work</p>
+                <h3 className="text-xl font-semibold text-white">Project</h3>
+              </div>
+              <ArrowIcon className="group-hover:text-blue-400 transition-all" />
+            </div>
+          </Link>
         </div>
-        <div className="bg-[#111111] rounded-3xl px-4 shadow-lg border border-gray-900 w-full max-w-screen-xl mx-auto">
+        {/* <div className="bg-[#111111] rounded-3xl px-4 shadow-lg border border-gray-900 w-full max-w-screen-xl mx-auto">
           <Swiper
             breakpoints={{
               320: {
@@ -147,7 +156,7 @@ function HeroSection() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div> */}
       </div>
     </section>
   );

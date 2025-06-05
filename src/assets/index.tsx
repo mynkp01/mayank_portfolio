@@ -10,6 +10,7 @@ import ReactLogo from "./other/ReactLogo.png";
 import Signature from "./other/Signature.png";
 import Tailwindcss from "./other/Tailwindcss.png";
 import Bootstrap from "./other/Wordpress.png";
+import StarIcon from "./other/StarIcon.png";
 
 export {
   Adobephotoshop,
@@ -24,4 +25,5 @@ export {
   Signature,
   Tailwindcss,
   Wordpress,
+  StarIcon
 };

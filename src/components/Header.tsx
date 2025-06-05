@@ -35,9 +35,9 @@ function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <button className="bg-gray-800 px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-700 transition">
+          <Link href={""} className="bg-gray-800 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-400 transition">
             Let’s talk
-          </button>
+          </Link>
         </div>
 
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
