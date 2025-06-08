@@ -2,6 +2,7 @@
 
 import {
   Adobephotoshop,
+  ArrowIcon,
   Bootstrap,
   CssLogo,
   Figma,
@@ -15,7 +16,6 @@ import {
   Tailwindcss,
   Wordpress,
 } from "@/assets";
-import ArrowIcon from "@/assets/logo/ArrowIcon";
 import Image from "next/image";
 import Link from "next/link";
 import "swiper/css";

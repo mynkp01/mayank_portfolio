@@ -1,5 +1,4 @@
-import { Cynoinfotech, EkamNgo, EventBazaar, MergeExperinace, NextKart, Ratnaafin, Signature, Tunex, ZeroTime } from '@/assets'
-import ArrowIcon from '@/assets/logo/ArrowIcon'
+import { ArrowIcon, Cynoinfotech, EkamNgo, EventBazaar, MergeExperinace, NextKart, Ratnaafin, Tunex, ZeroTime } from '@/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

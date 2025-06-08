@@ -6,7 +6,7 @@ function page() {
     <div className='max-w-5xl mx-auto flex flex-col items-center gap-5 px-4 my-10'>
         <h3 className='text-4xl font-semibold leading-tight'>Why Good Web Design Isn’t Just About Looks – It’s About Results</h3>
         <div className='space-y-3'>
-          <p className="text-sm text-gray-500">In today's digital world, your website is your first impression—sometimes your only chance to win a customer. As a web designer, I’ve seen businesses flourish just by transforming their outdated websites into sleek, user-friendly platforms. But web design is more than just colors, fonts, and layouts—it’s about crafting an experience that drives real results.</p>
+          <p className="text-sm text-gray-500">In today’s digital world, your website is your first impression—sometimes your only chance to win a customer. As a web designer, I’ve seen businesses flourish just by transforming their outdated websites into sleek, user-friendly platforms. But web design is more than just colors, fonts, and layouts—it’s about crafting an experience that drives real results.</p>
           <h5 className='font-semibold'>What Makes a Website “Good”?</h5>
           <p className="text-sm text-gray-500">A well-designed website isn’t just visually appealing. It must be:</p>
           <ul className='list-disc text-sm text-gray-500 ml-5'>

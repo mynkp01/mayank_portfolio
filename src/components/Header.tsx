@@ -1,9 +1,9 @@
 "use client"
 
-import Logo from '@/assets/logo/Logo';
+import { Logo } from '@/assets';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link'
-import path from 'path';
+
 import React, { useState } from 'react'
 
 function Header() {

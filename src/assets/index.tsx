@@ -26,6 +26,8 @@ import Tunex from "./other/Tunex.png";
 
 import BlogImage from "./logo/BlogImage";
 import AboutImage from "./logo/AboutImage";
+import Logo from "./logo/Logo";
+import ArrowIcon from "./logo/ArrowIcon";
 
 export {
   Adobephotoshop,
@@ -54,5 +56,5 @@ export {
 };
 
 export {
-  BlogImage, AboutImage
+  BlogImage, AboutImage, ArrowIcon, Logo
 }

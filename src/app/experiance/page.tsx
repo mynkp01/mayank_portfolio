@@ -1,7 +1,5 @@
 import { Mayank } from '@/assets'
-import ArrowIcon from '@/assets/logo/ArrowIcon'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 function page() {

@@ -1,4 +1,5 @@
-import Logo from '@/assets/logo/Logo'
+
+import { Logo } from '@/assets'
 import Link from 'next/link'
 import React from 'react'
 

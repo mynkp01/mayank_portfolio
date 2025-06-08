@@ -1,5 +1,4 @@
-import { BlogImage, Linkedin, Signature, StarIcon } from '@/assets'
-import ArrowIcon from '@/assets/logo/ArrowIcon'
+import { ArrowIcon, BlogImage, Linkedin, StarIcon } from '@/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -26,7 +25,7 @@ function AboutSection() {
             />
             <div className="flex justify-between items-end">
                 <div>
-                    <p className="text-3xl sm:text-5xl font-medium text-gray-400">Let's</p>
+                    <p className="text-3xl sm:text-5xl font-medium text-gray-400">Let’s</p>
                     <h3 className="text-3xl sm:text-5xl font-semibold text-white">Work <span className="text-blue-400">Together.</span></h3>
                 </div>
                 <ArrowIcon className="group-hover:text-blue-400 transition-all" />
