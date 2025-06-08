@@ -27,7 +27,7 @@ function Header() {
               key={idx}
               href={index?.path}
               className={`text-sm ${
-                index === "Home" ? 'text-blue-400' : 'text-gray-400 hover:text-blue-400'
+                index.link === "Home" ? 'text-blue-400' : 'text-gray-400 hover:text-blue-400'
               }`}
             >
               {index?.link}
