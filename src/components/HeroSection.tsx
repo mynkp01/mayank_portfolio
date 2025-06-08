@@ -9,6 +9,7 @@ import {
   JavascriptLogo,
   Mayank,
   Nextjs,
+  Project,
   ReactLogo,
   Signature,
   Tailwindcss,
@@ -36,7 +37,7 @@ function HeroSection() {
   ];
   return (
     <section className="grid lg:grid-cols-2 gap-5">
-      <Link href={""} className="group bg-[#111111] rounded-3xl p-6 grid sm:grid-cols-2 gap-4 items-center w-full shadow-lg border border-gray-900">
+      <div className="group bg-[#111111] rounded-3xl p-6 grid sm:grid-cols-2 gap-4 items-center w-full shadow-lg border border-gray-900">
         <div className="rounded-tl-4xl rounded-br-4xl overflow-hidden">
           <Image
             src={Mayank.src}
@@ -56,21 +57,20 @@ function HeroSection() {
             </div>
             <p className="text-sm text-gray-500 line-clamp-5">
               I am a highly skilled and creative web designer with 2+ Years Of
-              expertise creating visually appealing, user-friendly websites. I
-              have extensive experience creating e-commerce sites, dynamic,
-              static, and custom designs. My skills include HTML, CSS, Tailwind
-              CSS, JavaScript React.js, NextJs, and a variety of CMS platforms
-              such as WordPress and Magento.
+              expertise creating visually appealing, user-friendly websites.
             </p>
           </div>
-          <div className="flex justify-end w-full">
-            <ArrowIcon className="group-hover:text-blue-400 transition-all" />
+          <div className="flex justify-between items-center w-full">
+            <Link href={"/resume/mayank-parmar-cv.pdf"} type='submit' className="bg-gray-800 px-5 py-2 h-fit rounded-full text-sm hover:bg-blue-400 transition">
+              CV Download
+            </Link>
+            <Link href={"/about-me"}><ArrowIcon className="group-hover:text-blue-400 transition-all" /></Link>
           </div>
         </div>
-      </Link>
+      </div>
       <div className="flex flex-col gap-4">
         <div className="grid sm:grid-cols-2 gap-5">
-          <Link href={""} className="group bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
+          <Link href={"/experiance"} className="flex flex-col justify-between gap-5 group bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
             <div className="flex justify-center">
               <Image
                 src={Signature.src}
@@ -83,12 +83,20 @@ function HeroSection() {
             <div className="flex justify-between items-center">
               <div>
                 <p className="text-sm text-gray-400">More About Me</p>
-                <h3 className="text-xl font-semibold text-white">Credentials</h3>
+                <h3 className="text-xl font-semibold text-white">Experiance</h3>
               </div>
               <ArrowIcon className="group-hover:text-blue-400 transition-all" />
             </div>
           </Link>
-          <Link href={""} className="group bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
+          <Link href={"/projects"} className="flex flex-col justify-between gap-5 group bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
+            <div className="flex justify-center">
+              <Image
+                src={Project.src}
+                width={200}
+                height={200}
+                alt="Signature"
+              />
+            </div>
             <div className="flex justify-between items-center">
               <div>
                 <p className="text-sm text-gray-400">My Work</p>
@@ -98,7 +106,7 @@ function HeroSection() {
             </div>
           </Link>
         </div>
-        {/* <div className="bg-[#111111] rounded-3xl px-4 shadow-lg border border-gray-900 w-full max-w-screen-xl mx-auto">
+        <div className="lg:block hidden bg-[#111111] rounded-3xl px-4 shadow-lg border border-gray-900">
           <Swiper
             breakpoints={{
               320: {
@@ -129,7 +137,7 @@ function HeroSection() {
             centeredSlides={true}
             grabCursor={false}
             loop={true}
-            speed={5000}
+            speed={3000}
             allowTouchMove={false}
             autoplay={{
               delay: 0,
@@ -142,7 +150,6 @@ function HeroSection() {
             }}
             modules={[Autoplay, Mousewheel, FreeMode]}
             className="mySwiper"
-            style={{ transitionTimingFunction: "linear" }}
           >
             {SwiperData.map((item) => (
               <SwiperSlide key={item._id} className="py-4">
@@ -156,7 +163,7 @@ function HeroSection() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div> */}
+        </div>
       </div>
     </section>
   );

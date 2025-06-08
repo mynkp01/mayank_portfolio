@@ -1,4 +1,4 @@
-import { Signature, StarIcon } from '@/assets'
+import { BlogImage, Linkedin, Signature, StarIcon } from '@/assets'
 import ArrowIcon from '@/assets/logo/ArrowIcon'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,20 +7,12 @@ import React from 'react'
 function AboutSection() {
   return (
     <section className='grid grid-cols-1 lg:grid-cols-4 gap-y-5 lg:gap-5 w-full'>
-        <Link href={""} className="group lg:block hidden bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
-            <div className="flex justify-center">
-              <Image
-                src={Signature.src}
-                width={220}
-                height={220}
-                alt="Signature"
-                className="w-full h-full"
-              />
-            </div>
+        <Link href={"/blog"} className="group lg:block hidden bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
+            <BlogImage />
             <div className="flex justify-between items-center">
               <div>
                 <p className="text-sm text-gray-400">Blog</p>
-                <h3 className="text-xl font-semibold text-white">Blog</h3>
+                <h3 className="text-xl font-semibold text-white">Articals</h3>
               </div>
               <ArrowIcon className="group-hover:text-blue-400 transition-all" />
             </div>
@@ -41,34 +33,27 @@ function AboutSection() {
             </div>
         </Link>
         <div className='grid sm:grid-cols-2 lg:grid-cols-1 gap-5 w-full'>
-            <Link href={""} className="group lg:hidden bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
+            <Link href={"/blog"} className="group lg:hidden bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
                 <div className="flex justify-center">
-                    <Image
-                        src={Signature.src}
-                        width={220}
-                        height={220}
-                        alt="Signature"
-                        className="w-full h-full"
-                    />
+                    <BlogImage />
                 </div>
                 <div className="flex justify-between items-center">
                     <div>
                         <p className="text-sm text-gray-400">Blog</p>
-                        <h3 className="text-xl font-semibold text-white">Blog</h3>
+                        <h3 className="text-xl font-semibold text-white">Articals</h3>
                     </div>
                     <ArrowIcon className="group-hover:text-blue-400 transition-all" />
                 </div>
             </Link>
-            <Link href={""} className="group bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
-                <div className="flex justify-center">
+            <div className="flex flex-col justify-between gap-5 group bg-[#111111] rounded-3xl min-h-10 p-4 shadow-lg border border-gray-900">
+                <Link href={"https://www.linkedin.com/in/mayank-parmar-625359226/"} target='_blank' className="flex justify-center">
                     <Image
-                    src={Signature.src}
-                    width={220}
-                    height={220}
-                    alt="Signature"
-                    className="w-full h-full"
+                        src={Linkedin.src}
+                        width={80}
+                        height={80}
+                        alt="Linkedin"
                     />
-                </div>
+                </Link>
                 <div className="flex justify-between items-center">
                     <div>
                         <p className="text-sm text-gray-400">Stay With Me</p>
@@ -76,7 +61,7 @@ function AboutSection() {
                     </div>
                     <ArrowIcon className="group-hover:text-blue-400 transition-all" />
                 </div>
-            </Link>
+            </div>
         </div>
     </section>
   )

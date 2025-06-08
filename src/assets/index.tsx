@@ -11,6 +11,21 @@ import Signature from "./other/Signature.png";
 import Tailwindcss from "./other/Tailwindcss.png";
 import Bootstrap from "./other/Wordpress.png";
 import StarIcon from "./other/StarIcon.png";
+import Linkedin from "./other/Linkedin.png";
+import Project from "./other/Project.png";
+import EventBazaar from "./other/EventBazaar.png";
+import Ratnaafin from "./other/Ratnaafin.png";
+import ZeroTime from "./other/ZeroTime.png";
+import MergeExperinace from "./other/MergeExperiance.png";
+import EkamNgo from "./other/EkamNgo.png";
+import Cynoinfotech from "./other/Cynoinfotech.png";
+import NextKart from "./other/NextKart.png";
+import Tunex from "./other/Tunex.png";
+
+
+
+import BlogImage from "./logo/BlogImage";
+import AboutImage from "./logo/AboutImage";
 
 export {
   Adobephotoshop,
@@ -25,5 +40,19 @@ export {
   Signature,
   Tailwindcss,
   Wordpress,
-  StarIcon
+  StarIcon,
+  Linkedin,
+  Project,
+  EventBazaar,
+  Ratnaafin,
+  ZeroTime,
+  MergeExperinace,
+  EkamNgo,
+  Cynoinfotech,
+  Tunex,
+  NextKart
 };
+
+export {
+  BlogImage, AboutImage
+}
