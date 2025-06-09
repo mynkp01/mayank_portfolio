@@ -10,7 +10,7 @@ function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [{link: "Home", path: "/"}, {link: "About", path: "/about-me"}, {link:"Works", path:"/projects"}, {link:"Contact", path: ""}];
+  const navLinks = [{link: "Home", path: "/"}, {link: "About", path: "/about-me"}, {link:"Works", path:"/projects"}, {link:"Contact", path: "/contact-us"}];
 
 
   return (
@@ -27,7 +27,7 @@ function Header() {
               key={idx}
               href={index?.path}
               className={`text-sm ${
-                index.link === "Home" ? 'text-blue-400' : 'text-gray-400 hover:text-blue-400'
+                index.link === "Home" ? 'text-white' : 'text-gray-400 hover:text-white'
               }`}
             >
               {index?.link}
@@ -36,9 +36,9 @@ function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <button type='submit' className="bg-gray-800 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-400 transition">
+          <Link href={"/contact-us"} className="bg-gray-800 px-5 py-2 rounded-full text-sm font-semibold hover:text-black hover:bg-white transition">
             Let’s talk
-          </button>
+          </Link>
         </div>
 
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -59,9 +59,9 @@ function Header() {
               {index?.link}
             </Link>
           ))}
-          <button className="w-full bg-gray-800 py-2 rounded-full text-sm font-semibold hover:bg-gray-700 transition">
+          <Link href={"/contact-us"} className="w-full bg-gray-800 py-2 rounded-full text-sm font-semibold hover:bg-gray-700 transition">
             Let’s talk
-          </button>
+          </Link>
         </div>
       )}
     </header>

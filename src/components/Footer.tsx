@@ -9,7 +9,7 @@ function Footer() {
       <div><Logo  className='w-14 h-fit' /></div>
         <div className='grid sm:flex gap-1 sm:gap-4'>
           <Link href={"mailto:mayankparmar462@gmail.com"} className='hover:text-blue-400 text-center'>mayankparmar462@gmail.com</Link>
-          <Link href={"tel:(+91)9409141581"} className='hover:text-blue-400 text-center'>(+91) 9409141581</Link>
+          <Link href={"tel:+919409141581"} className='hover:text-blue-400 text-center'>+91 940 914 1581</Link>
         </div>
       <p>Copyright © 2025 by All rights reserved</p>
     </div>

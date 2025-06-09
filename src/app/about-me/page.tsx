@@ -6,7 +6,7 @@ import React from 'react'
 function page() {
   return (
     <div className='max-w-6xl mx-auto flex flex-col items-center gap-5 px-4 my-10'>
-        <div className='grid md:grid-cols-3 gap-5'>
+        <div className='grid md:grid-cols-3 gap-5 w-full'>
             <div className="group bg-[#111111] rounded-3xl p-6 w-full shadow-lg border border-gray-900">
                 <Image
                     src={Mayank.src}
@@ -45,10 +45,10 @@ function page() {
                         </ul>
                     </div>
                 </div>
-                <div className="flex justify-between w-full">
-                    <button type='submit' className="bg-gray-800 px-5 py-2 rounded-full text-sm cursor-pointer hover:bg-blue-400 transition">
+                <div className="flex items-center justify-between w-full">
+                    <Link href={"/mayank-parmar-cv.pdf"} download={true} className="bg-gray-800 h-fit px-5 py-2 rounded-full text-sm cursor-pointer hover:text-black hover:bg-white transition">
                     CV Download
-                    </button>
+                    </Link>
                     <Link href={""}><ArrowIcon className="group-hover:text-blue-400 transition-all" /></Link>
                 </div>
             </div>

@@ -16,7 +16,7 @@ function AboutSection() {
               <ArrowIcon className="group-hover:text-blue-400 transition-all" />
             </div>
         </Link>
-        <Link href={""} className="flex flex-col justify-between gap-5 group md:col-span-2 bg-[#111111] rounded-3xl min-h-10 p-4 pt-0 shadow-lg border border-gray-900">
+        <Link href={"/contact-us"} className="flex flex-col justify-between gap-5 group md:col-span-2 bg-[#111111] rounded-3xl min-h-10 p-4 pt-0 shadow-lg border border-gray-900">
             <Image
             src={StarIcon.src}
             width={30}
