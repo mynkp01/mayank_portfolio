@@ -34,7 +34,7 @@ function page() {
                     />
                     <textarea
                     placeholder="Your Message *"
-                    rows="5"
+                    rows={5}
                     className="w-full px-4 py-2 rounded-md bg-[#1a1a1a] text-white placeholder-gray-400 focus:outline-none resize-none"
                     ></textarea>
                     <button
