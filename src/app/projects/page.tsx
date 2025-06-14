@@ -1,4 +1,4 @@
-import { ArrowIcon, Cynoinfotech, EkamNgo, EventBazaar, MergeExperinace, NextKart, Ratnaafin, Tunex, ZeroTime } from '@/assets'
+import { ArrowIcon, Cynoinfotech, EkamNgo, EventBazaar, Hylunia, HyluniaPro, MergeExperinace, NextKart, Ratnaafin, Tunex, ZeroTime } from '@/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -13,7 +13,7 @@ const Project =[
   {
     image: Ratnaafin.src,
     title: "NextJs, Web Design",
-    name: "Event Bazaar",
+    name: "Ratnaafin",
     path: "https://www.ratnaafin.com/"
   },
   {
@@ -51,6 +51,18 @@ const Project =[
     title: "WordPress, Web Design",
     name: "Ekam Ngo",
     path: "https://ekam.ngo/"
+  },
+  {
+    image: Hylunia.src,
+    title: "Magento, Web Design",
+    name: "Hylunia",
+    path: "https://hylunia.com/"
+  },
+  {
+    image: HyluniaPro.src,
+    title: "Magento, Web Design",
+    name: "Hylunia Pro",
+    path: "https://www.hyluniapro.com/"
   }
 ]
 

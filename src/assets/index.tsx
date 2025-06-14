@@ -21,6 +21,8 @@ import EkamNgo from "./other/EkamNgo.png";
 import Cynoinfotech from "./other/Cynoinfotech.png";
 import NextKart from "./other/NextKart.png";
 import Tunex from "./other/Tunex.png";
+import HyluniaPro from "./other/HyluniaPro.png";
+import Hylunia from "./other/Hylunia.png";
 
 
 
@@ -52,7 +54,9 @@ export {
   EkamNgo,
   Cynoinfotech,
   Tunex,
-  NextKart
+  NextKart,
+  HyluniaPro,
+  Hylunia
 };
 
 export {
