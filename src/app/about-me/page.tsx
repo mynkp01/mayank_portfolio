@@ -7,7 +7,7 @@ function page() {
   return (
     <div className='max-w-6xl mx-auto flex flex-col items-center gap-5 px-4 my-10'>
         <div className='grid md:grid-cols-3 gap-5 w-full'>
-            <div className="group sticky top-[120px] bg-[#111111] rounded-3xl p-6 w-full h-fit shadow-lg border border-gray-900">
+            <div className="group md:sticky md:top-[120px] bg-[#111111] rounded-3xl p-6 w-full h-fit shadow-lg border border-gray-900">
                 <Image
                     src={Mayank.src}
                     alt="Mayank"
