@@ -61,9 +61,9 @@ function HeroSection() {
             </p>
           </div>
           <div className="flex justify-between items-center w-full">
-            <Link href={"/mayank-parmar-cv.pdf"} download={true} className="bg-gray-800 px-5 py-2 h-fit rounded-full text-sm hover:text-black hover:bg-white transition">
+            <a href="/mayank-parmar-cv.pdf" download="Mayank-CV.pdf" className="bg-gray-800 px-5 py-2 h-fit rounded-full text-sm hover:text-black hover:bg-white transition">
               CV Download
-            </Link>
+            </a>
             <Link href={"/about-me"}><ArrowIcon className="group-hover:text-blue-400 transition-all" /></Link>
           </div>
         </div>
