@@ -86,12 +86,12 @@ function page() {
                         <p className='text-base font-medium'>Ahmedabad, Gujarat</p>
                     </div>
                 </div> 
-                <div className="flex items-center justify-between w-full">
-                    <Link href={"/mayank-parmar-cv.pdf"} download={true} className="bg-gray-800 h-fit px-5 py-2 rounded-full text-sm cursor-pointer hover:text-black hover:bg-white transition">
-                    CV Download
-                    </Link>
-                    <Link href={""}><ArrowIcon className="group-hover:text-blue-400 transition-all" /></Link>
-                </div>
+                <div className="flex justify-between items-center w-full">
+            <a href="/mayank-parmar-cv.pdf" download="Mayank-CV.pdf" className="bg-gray-800 px-5 py-2 h-fit rounded-full text-sm hover:text-black hover:bg-white transition">
+              CV Download
+            </a>
+            <Link href={"/about-me"}><ArrowIcon className="group-hover:text-blue-400 transition-all" /></Link>
+          </div>
             </div>
         </div>
     </div>
