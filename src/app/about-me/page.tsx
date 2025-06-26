@@ -7,7 +7,7 @@ function page() {
   return (
     <div className='max-w-6xl mx-auto flex flex-col items-center gap-5 px-4 my-10'>
         <div className='grid md:grid-cols-3 gap-5 w-full'>
-            <div className="group md:sticky md:top-[120px] bg-[#111111] rounded-3xl p-6 w-full h-fit shadow-lg border border-gray-900">
+            <div className="group sticky top-[120px] bg-[#111111] rounded-3xl p-6 w-full h-fit shadow-lg border border-gray-900">
                 <Image
                     src={Mayank.src}
                     alt="Mayank"
@@ -87,10 +87,13 @@ function page() {
                     </div>
                 </div> 
                 <div className="flex items-center justify-between w-full">
-                    <Link href={"/mayank-parmar-cv.pdf"} download={true} className="bg-gray-800 h-fit px-5 py-2 rounded-full text-sm cursor-pointer hover:text-black hover:bg-white transition">
-                    CV Download
-                    </Link>
-                    <Link href={""}><ArrowIcon className="group-hover:text-blue-400 transition-all" /></Link>
+                   <a
+                        href="/mayank-parmar-cv.pdf"
+                        download="Mayank_CV.pdf"
+                        className="bg-orange-500 text-white font-bold py-3 px-8 rounded-md hover:bg-orange-600 transition-colors cursor-pointer flex gap-4 w-fit"
+                    >
+                        Download CV
+                    </a>
                 </div>
             </div>
         </div>
